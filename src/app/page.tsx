@@ -19,7 +19,7 @@ export default function Home() {
           for English speakers. Learn, practice, and pass with confidence!
         </p>
         <a
-          href="#get-started"
+          href="/practice-question"
           className="inline-block bg-blue-700 text-white font-semibold rounded-full px-8 py-3 shadow-lg hover:bg-blue-800 transition mb-2"
         >
           Start Practicing Free
