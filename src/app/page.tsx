@@ -92,21 +92,22 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="flex flex-col md:flex-row gap-10 items-center md:items-start">
-          <Image
-            src="/vercel.svg"
-            alt="Practice Tests"
-            width={56}
-            height={56}
-            className="mb-4 md:mb-0 dark:invert"
-          />
+        <section className="flex flex-col md:flex-row gap-10 items-center md:items-start bg-white/80 dark:bg-gray-800/80 rounded-xl shadow p-6">
+          <div className="flex-shrink-0 flex items-center justify-center w-32 h-32 bg-blue-100 dark:bg-blue-900 rounded-lg mr-0 md:mr-8 mb-6 md:mb-0">
+            <Image
+              src="/file.svg"
+              alt="Practice Test Screenshot"
+              width={64}
+              height={64}
+              className=""
+            />
+          </div>
           <div>
             <h2 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-200">
               Realistic Practice
             </h2>
             <p className="text-gray-700 dark:text-gray-200 mb-2">
-              Take unlimited practice tests that look and feel like the real
-              thing. Track your progress and celebrate your wins!
+              Take unlimited practice tests that look and feel like the real thing. Track your progress and celebrate your wins! Our practice mode simulates the real exam experience, so you’ll feel confident and ready on test day.
             </p>
           </div>
         </section>
