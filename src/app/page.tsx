@@ -2,101 +2,148 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="min-h-screen flex flex-col items-center justify-between bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-blue-950 font-sans">
+      <header className="w-full max-w-4xl mx-auto px-6 pt-20 flex flex-col items-center text-center">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/globe.svg"
+          alt="Einbürgerung Test"
+          width={64}
+          height={64}
+          className="mb-6"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-blue-900 dark:text-white">
+          Ready to become a German citizen?
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-200 mb-6 max-w-2xl">
+          We make the Einbürgerungstest easy, friendly, and stress-free—especially
+          for English speakers. Learn, practice, and pass with confidence!
+        </p>
+        <a
+          href="#get-started"
+          className="inline-block bg-blue-700 text-white font-semibold rounded-full px-8 py-3 shadow-lg hover:bg-blue-800 transition mb-2"
+        >
+          Start Practicing Free
+        </a>
+        <span className="text-sm text-gray-500 dark:text-gray-400">
+          No signup required. Just jump in!
+        </span>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="w-full flex flex-col items-center gap-6 mt-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Image
+            src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80"
+            alt="Person studying with laptop"
+            width={200}
+            height={140}
+            className="rounded-xl object-cover shadow"
+          />
+          <Image
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+            alt="German passport closeup"
+            width={200}
+            height={140}
+            className="rounded-xl object-cover shadow"
+          />
+          <Image
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            alt="Traveler at airport with suitcase"
+            width={200}
+            height={140}
+            className="rounded-xl object-cover shadow"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </section>
+
+      <main className="w-full max-w-4xl mx-auto px-6 py-12 flex flex-col gap-16">
+        <section className="flex flex-col md:flex-row gap-10 items-center md:items-start">
           <Image
-            aria-hidden
             src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            alt="Questions"
+            width={56}
+            height={56}
+            className="mb-4 md:mb-0"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <div>
+            <h2 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-200">
+              Understand Every Question
+            </h2>
+            <p className="text-gray-700 dark:text-gray-200 mb-2">
+              Clear English explanations and cultural context for every question.
+              No more guessing—know exactly what’s being asked (and why).
+            </p>
+          </div>
+        </section>
+        <section className="flex flex-col md:flex-row gap-10 items-center md:items-start">
           <Image
-            aria-hidden
             src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            alt="Flashcards"
+            width={56}
+            height={56}
+            className="mb-4 md:mb-0"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <div>
+            <h2 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-200">
+              Learn the Fun Way
+            </h2>
+            <p className="text-gray-700 dark:text-gray-200 mb-2">
+              Practice with interactive flashcards and quizzes. Learning is
+              quick, effective, and (dare we say) fun!
+            </p>
+          </div>
+        </section>
+        <section className="flex flex-col md:flex-row gap-10 items-center md:items-start">
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/vercel.svg"
+            alt="Practice Tests"
+            width={56}
+            height={56}
+            className="mb-4 md:mb-0 dark:invert"
           />
-          Go to nextjs.org →
-        </a>
+          <div>
+            <h2 className="text-2xl font-semibold mb-2 text-blue-800 dark:text-blue-200">
+              Realistic Practice
+            </h2>
+            <p className="text-gray-700 dark:text-gray-200 mb-2">
+              Take unlimited practice tests that look and feel like the real
+              thing. Track your progress and celebrate your wins!
+            </p>
+          </div>
+        </section>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="bg-white/70 dark:bg-gray-800/70 rounded-xl p-6 flex flex-col items-center gap-2 shadow">
+            <span className="text-blue-700 dark:text-blue-200 font-semibold text-lg">
+              “I passed on my first try! The explanations made everything so much clearer.”
+            </span>
+            <span className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-2">
+              <Image src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria S." width={32} height={32} className="rounded-full" />
+              Maria S.
+            </span>
+          </div>
+          <div className="bg-white/70 dark:bg-gray-800/70 rounded-xl p-6 flex flex-col items-center gap-2 shadow">
+            <span className="text-blue-700 dark:text-blue-200 font-semibold text-lg">
+              “The flashcards made learning fun and easy. I actually looked forward to studying!”
+            </span>
+            <span className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-2">
+              <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="Priya S." width={32} height={32} className="rounded-full" />
+              Priya S.
+            </span>
+          </div>
+          <div className="bg-white/70 dark:bg-gray-800/70 rounded-xl p-6 flex flex-col items-center gap-2 shadow">
+            <span className="text-blue-700 dark:text-blue-200 font-semibold text-lg">
+              “Practice tests felt just like the real thing. I felt totally prepared on exam day.”
+            </span>
+            <span className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-2">
+              <Image src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex M." width={32} height={32} className="rounded-full" />
+              Alex M.
+            </span>
+          </div>
+        </section>
+      </main>
+
+      <footer className="w-full max-w-4xl mx-auto px-6 py-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+        &copy; {new Date().getFullYear()} Einbürgerung Helper. Not affiliated
+        with the German government.
       </footer>
     </div>
   );

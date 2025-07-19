@@ -1,0 +1,9 @@
+1. Use TypeScript for all new files and code changes.
+2. Follow Next.js conventions for file structure and routing (e.g., use the /app directory).
+3. Use Tailwind CSS utility classes for styling; do not write custom CSS unless necessary.
+4. Use the `Image` component from `next/image` for images.
+5. Use the Geist font family via next/font as configured in layout.tsx.
+6. Ensure all code is linted and type-safe.
+7. Do not modify configuration files (e.g., next.config.ts, postcss.config.mjs, eslint.config.mjs) unless explicitly requested.
+
+This website helps people who moved to germany and learnt german pass the einburgerung test.  It is assumed that you speak english better than german and we will help users to understand the questions, get context behind the questions and learn more about it and also have things like flash cards and tests.  
