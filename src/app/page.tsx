@@ -116,8 +116,8 @@ export default function Home() {
               “I passed on my first try! The explanations made everything so much clearer.”
             </span>
             <span className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-2">
-              <Image src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria S." width={32} height={32} className="rounded-full" />
-              Maria S.
+              <Image src="/fred.jpg" alt="Fred S." width={32} height={32} className="rounded-full" />
+              Fred H.
             </span>
           </div>
           <div className="bg-white/70 dark:bg-gray-800/70 rounded-xl p-6 flex flex-col items-center gap-2 shadow">
@@ -125,8 +125,8 @@ export default function Home() {
               “The flashcards made learning fun and easy. I actually looked forward to studying!”
             </span>
             <span className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-2">
-              <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="Priya S." width={32} height={32} className="rounded-full" />
-              Priya S.
+              <Image src="/jenny.jpg" alt="Jenny S." width={32} height={32} className="rounded-full" />
+              Jenny C.
             </span>
           </div>
           <div className="bg-white/70 dark:bg-gray-800/70 rounded-xl p-6 flex flex-col items-center gap-2 shadow">
@@ -134,8 +134,8 @@ export default function Home() {
               “Practice tests felt just like the real thing. I felt totally prepared on exam day.”
             </span>
             <span className="text-gray-600 dark:text-gray-300 text-sm flex items-center gap-2">
-              <Image src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex M." width={32} height={32} className="rounded-full" />
-              Alex M.
+              <Image src="/james.jpg" alt="James S." width={32} height={32} className="rounded-full" />
+              James S.
             </span>
           </div>
         </section>
